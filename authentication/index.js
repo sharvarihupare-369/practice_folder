@@ -3,6 +3,7 @@ const app = express()
 app.use(express.json())
 const mongoose = require('mongoose')
 const userRouter = require('./routes/userRoutes')
+const postRouter = require('./routes/postRoutes')
 
 const connect = async() => {
     try {
@@ -14,6 +15,7 @@ const connect = async() => {
 }
 
 app.use('/user',userRouter)
+app.use('/addpost',postRouter)
 
 app.listen(8080,()=>{
     connect()
