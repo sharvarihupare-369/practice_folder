@@ -1,5 +1,6 @@
 const {Router} =  require("express")
 const jwt = require("jsonwebtoken")
+const blacklist = require('../blacklist')
 const userModel = require("../models/user.model")
 const userRouter = Router()
 
@@ -31,6 +32,16 @@ userRouter.post("/login",async(req,res)=>{
   } catch (error) {
     res.send(error)
   }
+})
+
+//blacklist the token
+userRouter.get("/logout",(req,res)=>{
+    const token = req.headers.authorization?.split(" ")[1]
+    if(!token){
+      res.send("Login first")
+    }
+    blacklist.push(token);
+    res.send("User logged out")
 })
 
 module.exports = userRouter
