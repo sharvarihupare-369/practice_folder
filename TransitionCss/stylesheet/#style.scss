@@ -1,0 +1,14 @@
+@import "vars";
+@import "general";
+
+.container{
+    margin: 180px auto;
+    display: grid;
+    place-content: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: $yellow;
+}
