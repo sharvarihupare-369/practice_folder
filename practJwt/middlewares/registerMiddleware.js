@@ -3,7 +3,7 @@ const UserModel = require("../models/userModel");
 const registermid = async(req,res,next) => {
     const {email,pass} = req.body;
     if(pass.length < 8){
-      return  res.status(400).send({msg : "Password should be at least 8 charachters"})
+      return  res.status(200).send({msg : "Password should be at least 8 charachters"})
     }
     if(!/\d/.test(pass)){
       return  res.status(400).send({msg : "Password should conatin at least one number"})
