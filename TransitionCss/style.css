@@ -1,0 +1,96 @@
+
+.container{
+    margin: 180px auto;
+    display: grid;
+    place-content: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transition-property: background-color,width;
+    transition-duration: 1s;
+    transition-delay: 500ms;
+    &:hover {
+        background-color: red;
+        /* transition-property: background-color,width;
+        transition-duration: 1s; */
+   
+        width: 300px;
+    }
+
+}
+
+.cont{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    /* background-image: url('/Assets\girlanime.jpg'); */
+    background-color: yellow;
+    border-radius: 0px;
+    /* transition-property: border-radius; */
+    transition-property: all;
+    transition-duration: 0.5s 1s;
+    /* transition-delay: 500ms; */
+    &:hover {
+
+        background-color: red;
+        border-radius: 50%;
+       
+    }
+
+}
+
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(1, 17, 26);
+    margin-bottom: 2rem;
+}
+
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family:sans-serif;
+    background: linear-gradient(to right,#36D1DC, #5B86E5);
+    padding: 1rem 3rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+
+h2{
+    font-size: 2.5rem;
+}
+
+
+h3{
+    font-size: 2rem;
+}
+
+
+h4{
+    font-size: 1.5rem;
+}
+
+
+h5{
+    font-size: 1rem;
+}
+
+
+h6{
+    font-size: 0.5rem;
+}
