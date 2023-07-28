@@ -1,0 +1,39 @@
+.container{
+    margin: 180px auto;
+    display: grid;
+    place-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(6,100px);
+    padding: 32px;
+    border: 10px solid;
+    &:hover .box{
+        /* height: 300px; */
+        margin-top: 200px;
+    }
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.b1{
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+}
+
+.b2{
+    background-color: red;
+    transition-delay: 1s;
+}
+
+.b3{
+    background-color: green;
+    transition-delay: 1.5s;
+   
+}
+
