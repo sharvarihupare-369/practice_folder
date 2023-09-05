@@ -1,0 +1,1 @@
+memoization ==> one of the way of optimization  that keeping the record of previous record in the memory.so if that required in next iteration or rendering so no need to calculate again. 
