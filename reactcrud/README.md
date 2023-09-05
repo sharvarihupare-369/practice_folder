@@ -28,3 +28,8 @@ D :- Delete (DELETE)
 7. Navbar created and routes linked to it.
 
 8. Sidebar created where filtering done by category and gender (checkboxes used)
+   While handling category by checkboxes by clicking on that we have to send data in url so that it should change the things according to it onto the UI
+
+   when user selects any category or gender url should change so to create or add  dependancy we should use useEffect hook.
+
+  useSearchParams hook ===>  
