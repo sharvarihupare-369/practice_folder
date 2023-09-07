@@ -22,6 +22,9 @@ let user2 = Object.create({
 console.log(user)
 console.log(user1)
 console.log(user2)
+console.log(user === user1)
+console.log(user === user2)
+console.log(user1 === user2)
 
 // console.log(user === user2)
 // console.log(user === user1)
