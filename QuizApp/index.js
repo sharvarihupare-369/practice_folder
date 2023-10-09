@@ -53,6 +53,17 @@ function createUser(name,score=0){
     return user;
 }
 
-const user12 = createUser("sharvari",20)
-console.log(user12.increaseScore(2))
-console.log(user12.changeName("Shara"))
+// const user12 = createUser("sharvari",20)
+// console.log(user12.increaseScore(2))
+// console.log(user12.changeName("Shara"))
+
+
+class Person {
+     constructor(name,age){
+        this.name = name
+        this.age = age;
+     }
+}
+
+let p1 = new Person("shara",21)
+console.log(p1)
