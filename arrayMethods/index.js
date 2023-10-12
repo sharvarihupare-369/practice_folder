@@ -78,3 +78,6 @@ console.log(squaredAraay)
 
 let someElFindArray  = randomArray.some((el)=>el%5==0)
 console.log(someElFindArray)
+
+let someElFind = randomArray.every((el)=>el%2==0)
+console.log(someElFind)
